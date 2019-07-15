@@ -21,9 +21,8 @@ body {
     background-color: #FFFFFF;
 }
 
-
 #header {
-    height: 10%;
+    height: 20%;
     margin-left: 300px;
 }
 
@@ -75,14 +74,24 @@ ul {
     width: 0.5em;
     margin-left: -3em;
     -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 
-#contentwrapper{
+#contentwrapper {
     margin-left: 300px;
+}
+
+#portrait {
+    margin-top: 10%;
+    border-radius: 50%;
+}
+
+#introtxt {
+margin: 0 auto;
+    width: 50%;
 }
 
 .pdfwrapper {
@@ -90,7 +99,20 @@ ul {
     height: 500px;
 }
 
+
 .pdf {
     width: 100%;
     height: 100%;
+}
+.refs{
+    position: fixed;
+    bottom: 20px;
+margin-left: 300px;
+    width: 50%;
+}
+.refs>a{
+    color: #000;
+    font-weight: 600;
+    padding: 20px;
+
 }
