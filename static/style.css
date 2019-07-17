@@ -22,9 +22,12 @@ body {
 }
 
 #header {
-    height: 20%;
+    height: 300px;
     margin-left: 300px;
+    display: inline-block;
+    overflow: hidden;
 }
+
 
 .sidenav {
     height: 100%;
@@ -82,17 +85,25 @@ ul {
 
 #contentwrapper {
     margin-left: 300px;
+    margin-bottom: 0;
+    margin-right: 0;
+    overflow: auto;
 }
 
 #portrait {
-    margin-top: 10%;
     border-radius: 50%;
 }
 
-#introtxt {
-margin: 0 auto;
-    width: 50%;
+#masterquote {
+
 }
+
+#introtxt {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 50px;
+}
+
 
 .pdfwrapper {
     width: 100%;
@@ -104,15 +115,65 @@ margin: 0 auto;
     width: 100%;
     height: 100%;
 }
-.refs{
-    position: fixed;
-    bottom: 20px;
-margin-left: 300px;
-    width: 50%;
-}
-.refs>a{
-    color: #000;
-    font-weight: 600;
-    padding: 20px;
 
+.links {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 150px;
+    align-items: center;
+}
+.links>div{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.links>div>a{
+    padding-right: 20px;
+    color: black;
+}
+
+.projectWrapper {
+    margin-top: 80px;
+    margin-left: 50px;
+    height: 200px;
+}
+
+.projectimg {
+    height: 100%;
+    float: left;
+}
+
+.projectimg:hover {
+    transform: scale(0.95);
+}
+
+.descriptiondiv {
+    padding-left: 20px;
+    float: left;
+    text-align: left;
+    width: 60%;
+}
+
+.datediv {
+    height: 100%;
+    float: right;
+    margin-top: -180px;
+    margin-right: 50px;
+    clear: both;
+}
+
+.titleref {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.titleref:hover {
+    color: lightseagreen;
+}
+
+.more {
+    padding-left: 20px;
 }

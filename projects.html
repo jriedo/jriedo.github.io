@@ -2,33 +2,130 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JRiedo</title>
 </head>
 <body>
 <div id="wrapper">
-    <div id="header">
-        <h1>hi. my name is Jan.</h1>
-    </div>
     <div class="sidenav">
         <ul class="list">
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="projects.html" style="color: #f1f1f1">Projects</a>
-                <ul class="sublist">
-                    <li><a href="master_thesis.html">Master Thesis</a></li>
-                    <li><a href="active_learning.html">Active Learning</a></li>
-                    <li><a href="melanoma.html">Melanoma</a></li>
-                    <li><a href="connect_4.html">Connect 4</a></li>
-                    <li><a href="conventional_ml.html">Conventional ML</a></li>
+                <!--                <ul class="sublist">-->
+                <!--                    <li><a href="projects/master_thesis.html">Master Thesis</a></li>-->
+                <!--                    <li><a href="projects/active_learning.html">Active Learning</a></li>-->
+                <!--                    <li><a href="projects/melanoma.html">Melanoma</a></li>-->
+                <!--                    <li><a href="projects/connect_4.html">Connect 4</a></li>-->
+                <!--                    <li><a href="projects/conventional_ml.html">Conventional ML</a></li>-->
 
-                </ul>
+                <!--                </ul>-->
 
             </li>
         </ul>
 
     </div>
     <div id="contentwrapper">
+        <h1>my projects</h1>
 
+        <div class="projectWrapper">
+            <a href="https://github.com/jriedo/candidate_segmentations">
+                <img title="Master Thesis" class="projectimg" src="static/variational_oar_8_s_tiles_bw.png"
+                     alt="CandidateSegmentations">
+            </a>
+            <div class="descriptiondiv">
+                <h2><a class="titleref" href="https://github.com/jriedo/candidate_segmentations" title="Master Thesis">Deep
+                    Learning-based
+                    Approach for Variable Candidate Segmentation</a></h2>
+                <p>Medical image segmentations made by experts express a lot of variability. This variability can
+                    reflect the underlying uncertainty which is a nature of medical data. During my master thesis I
+                    developed a neural network architecture which was able to create diverse candidate segmentations for
+                    one input image. For validation purposes, I built a web interface based on python's Flask library
+                    and deployed it with Goole App Engine and Google Cloud Storage. A clinician used this interface to
+                    rate my candidate segmentations.
+                    <a class="more" href="https://github.com/jriedo/candidate_segmentations">code soon public</a>
+                </p>
+            </div>
+
+            <div class="datediv"><p>March 2019 - today<br>Master Thesis</p></div>
+        </div>
+
+        <div class="projectWrapper">
+            <a href="pdfs/active_learning.pdf"><img title="Active Learning" class="projectimg"
+                                                    src="static/active_learning.png" alt="ActiveLearning"></a>
+            <div class="descriptiondiv">
+                <h2><a class="titleref" href="pdfs/active_learning.pdf" title="Active Learning">Skull Stripping: An
+                    Active Learning Approach</a></h2>
+                <p>Two main challenges of automated image processing in medical image analysis are the heterogeneity of
+                    the data and the scarcity of it. Although abundant data exists, labeling it is very time-consuming
+                    and expensive. Therefore it is crucial to be able to train an algorithm with very few data. One
+                    approach to this is active learning, where unlabeled samples are actively selected by certain
+                    criteria and then used to train the deep network. With this approach it is possible to reach a good
+                    performance without having to label all the data.
+                    <a class="more" href="pdfs/active_learning.pdf">doc</a>
+                    <a class="more" href="https://github.com/istb-mia/alss-jriedo">source</a></p>
+            </div>
+            <div class="datediv"><p>June 2018 - September 2018<br>Civil Service</p></div>
+
+        </div>
+
+        <div class="projectWrapper">
+            <a href="https://github.com/jriedo/Connect4-cpp"><img title="Connect 4" class="projectimg"
+                                                                  src="static/connect4.png"
+                                                                  alt="Connect4"></a>
+            <div class="descriptiondiv">
+                <h2><a class="titleref" href="https://github.com/jriedo/Connect4-cpp" title="VAE & GAN">Connect 4: A
+                    Minimax Game
+                    Engine in C++ and Python </a></h2>
+                <p>What started as a private project for hands-on experience with game theory ended with a competition
+                    c++ vs python. My first minimax algorithm with alpha-beta-pruning was written in Python. It could
+                    easily compete against a mediocre human in the game of connect 4. It achieved a 4 moves look-ahead
+                    within reasonable computation time (cpu) of 2-3 s. During a c++ module, I had the chance to come up
+                    with a project. So i decided to compete against the Python implementation. What came out is a
+                    200-times faster connect 4 engine with a look-ahead of 8 moves in 2s. For the pure joy I constructed
+                    a hardware connect 4 bot which can play against a human in real life. <br>
+
+                    I am aware that connect 4 is a solved and relatively easy game, but perfect to explore game theory.
+                    <a class="more" target="_blank" href="https://github.com/jriedo/Connect4-python">Python code</a>
+                    <a class="more" target="_blank" href="https://github.com/jriedo/Connect4-cpp">C++ code</a>
+                </p>
+            </div>
+            <div class="datediv"><p>September 2018 - December 2018<br>Private & Master Module</p></div>
+        </div>
+
+        <div class="projectWrapper">
+            <a href="pdfs/skin_lesion.pdf"><img title="Skin Lesions" class="projectimg"
+                                                src="static/skin_lesion.png" alt="SkinLesion"></a>
+            <div class="descriptiondiv">
+                <h2><a class="titleref" href="pdfs/skin_lesion.pdf" title="Skin Lesion">Skin Lesion Analysis
+                    Towards Melanoma Detection: A Generative Approach</a></h2>
+                <p>The International Skin Imaging Collaboration (ISIC) sets up a challenge every year called "Skin
+                    Lesion Analysis Towards Melanoma Detection". It aims at automated skin lesion classification and
+                    melanoma detection. During a project of the master module "Advanced Topics in Machine Learning" we
+                    created a pipeline for data augmentation and classification. The augmentation was carried out with a
+                    variational autoencoder, followed by a generative adversarial network. Classification was then done
+                    with a standard ResNet.
+
+                    <a class="more" target="_blank" type="application/pdf" href="pdfs/skin_lesion.pdf">more</a></p>
+            </div>
+            <div class="datediv"><p>February 2018 - May 2018<br>Master Module</p></div>
+        </div>
+
+        <div class="projectWrapper">
+            <a href="pdfs/mialab.pdf"><img title="Conventional ML" class="projectimg"
+                                           src="static/brainseg.png" alt="BrainSegmentation"></a>
+            <div class="descriptiondiv">
+                <h2><a class="titleref" href="pdfs/mialab.pdf" title="Conventional ML">Automatic Brain
+                    Tissue Segmentation in MRI using Supervised Machine Learning</a></h2>
+                <p>
+                    The first time I came in contact with conventioanl machine learning algorithms was during this lab
+                    module of medical image analysis. With very simple implementations of random forests, support vector
+                    machines and k-nearest-neighbor algorithms, we were able to achieve reasonable performance on the
+                    task of brain matter segmenation.
+                    <a class="more" target="_blank" href="pdfs/mialab.pdf">more</a></p>
+            </div>
+            <div class="datediv"><p>September 2017 - January 2018<br>Master Module</p></div>
+        </div>
     </div>
 </div>
 </body>
