@@ -1,14 +1,17 @@
+/*generic settings*/
 * {
     font-family: Helvetica;
 }
 
-body {
+html, body {
 
     color: #000000;
     text-align: center;
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100%;
+    width: 100%;
 }
 
 #wrapper {
@@ -21,17 +24,12 @@ body {
     background-color: #FFFFFF;
 }
 
-#header {
-    height: 300px;
-    margin-left: 300px;
-    display: inline-block;
-    overflow: hidden;
-}
 
+/*sidebar*/
 
 .sidenav {
     height: 100%;
-    width: 300px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -54,7 +52,7 @@ body {
     color: #f1f1f1;
 }
 
-ul {
+.sidenav ul {
     list-style: none;
     text-align: left;
 }
@@ -66,36 +64,20 @@ ul {
     display: inline-block;
     width: 0.5em;
     margin-left: -1em;
-
 }
 
-.sublist li::before {
-    content: "\21B5";
-    color: #818181;
-    font-weight: bold;
-    display: inline-block;
-    width: 0.5em;
-    margin-left: -3em;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-}
 
+/*settings for all pages*/
 #contentwrapper {
-    margin-left: 300px;
-    margin-bottom: 0;
-    margin-right: 0;
+    margin-left: 200px;
+    height: 100%;
     overflow: auto;
 }
 
+/*home page*/
 #portrait {
+    margin-top: 15%;
     border-radius: 50%;
-}
-
-#masterquote {
-
 }
 
 #introtxt {
@@ -104,76 +86,106 @@ ul {
     padding-top: 50px;
 }
 
-
-.pdfwrapper {
-    width: 100%;
-    height: 500px;
-}
-
-
-.pdf {
-    width: 100%;
-    height: 100%;
-}
-
-.links {
+.footer {
     position: fixed;
-    display: flex;
-    width: 100%;
-    bottom: 0;
-    left: 150px;
+    bottom: 20px;
+    right: 0;
+    left: 200px;
     align-items: center;
-}
-.links>div{
     text-align: center;
-    width: 100%;
-    padding-bottom: 50px;
+
 }
-.links>div>a{
+
+.socialLink {
+    display: inline-block;
     padding-right: 20px;
     color: black;
 }
 
+
+/*projects*/
 .projectWrapper {
     margin-top: 80px;
     margin-left: 50px;
+    margin-right: 50px;
     height: 200px;
+    text-align: left;
+}
+
+.imgWrapper{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    vertical-align: top;
 }
 
 .projectimg {
     height: 100%;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.projectimg:hover {
-    transform: scale(0.95);
-}
 
-.descriptiondiv {
+.descriptionDiv {
     padding-left: 20px;
-    float: left;
+    display: inline-block;
     text-align: left;
+    vertical-align: top;
     width: 60%;
 }
+.descriptionDiv>h2{
+    margin-block-start: 0;
+}
 
-.datediv {
+.projectWrapper>.dateDiv {
     height: 100%;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
     float: right;
-    margin-top: -180px;
     margin-right: 50px;
-    clear: both;
+}
+.projectWrapper>.dateDiv>p {
+        margin-block-start: 0;
 }
 
 .titleref {
     color: black;
     text-decoration: none;
     display: inline-block;
-}
-
-.titleref:hover {
-    color: lightseagreen;
+    vertical-align: top;
 }
 
 .more {
     padding-left: 20px;
 }
+
+/*cv*/
+.sectionWrapper {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: left;
+    margin-right: 100px;
+    background-color: WhiteSmoke;
+}
+
+.resumeDiv {
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    width: 60%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.sectionWrapper>.dateDiv {
+    display: inline-block;
+    height: 100%;
+    float: right;
+    margin-right: 50px;
+     vertical-align: top;
+}
+
+.sectionHeader{
+	margin-top: 50px;
