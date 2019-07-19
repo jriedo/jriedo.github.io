@@ -112,9 +112,9 @@ html, body {
     text-align: left;
 }
 
-.imgWrapper{
+.imgWrapper {
     display: inline-block;
-    height: 200px;
+    height: 100%;
     width: 300px;
     text-align: center;
     vertical-align: top;
@@ -128,26 +128,28 @@ html, body {
 
 
 .descriptionDiv {
-    padding-left: 20px;
+    height: 100%;
+    margin-left: 20px;
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    width: 60%;
+    width: calc(100% - 580px);
 }
-.descriptionDiv>h2{
+
+.descriptionDiv > h2 {
     margin-block-start: 0;
 }
 
-.projectWrapper>.dateDiv {
+.projectWrapper > .dateDiv {
     height: 100%;
     width: 250px;
     display: inline-block;
     vertical-align: top;
-    float: right;
-    margin-right: 50px;
+    margin-top: 48px;
 }
-.projectWrapper>.dateDiv>p {
-        margin-block-start: 0;
+
+.projectWrapper > .dateDiv > p {
+    margin-block-start: 0;
 }
 
 .titleref {
@@ -179,13 +181,13 @@ html, body {
     vertical-align: top;
 }
 
-.sectionWrapper>.dateDiv {
+.sectionWrapper > .dateDiv {
     display: inline-block;
     height: 100%;
     float: right;
     margin-right: 50px;
-     vertical-align: top;
+    vertical-align: top;
 }
 
-.sectionHeader{
-	margin-top: 50px;
+.sectionHeader {
+    margin-top: 50px;
