@@ -14,6 +14,7 @@
 
         gtag('config', 'UA-144218795-1');
     </script>
+    <script type="text/javascript" src="static/modal.js"></script>
 
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,14 +31,27 @@
 
     </div>
     <div id="contentwrapper">
-        <img id="portrait" src="static/portrait.png" alt="Avatar" style="width:200px">
+        <div id="imgDiv">
+            <div class="imgCrop">
+                <img id="portrait" src="static/portrait.JPG" alt="Portrait Jan Riedo">
+            </div>
+        </div>
+
+        <div id="portraitZoomed" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="portraitModal">
+            <div id="caption"></div>
+        </div>
         <h2 id="masterquote">Biomedical Engineer With Focus On Deep Learning</h2>
         <h3 id="introtxt">
             <strong>
                 The Master in Biomedical Engineering let me discover my passion for<br>intelligent algorithms, big data
-                and solving today's real world problems<br>with software. After the apprenticeship as a polytechnician, my
-                fascination<br>for writing software started in my Bachelor in Mechanical Engineering. This<br>later lead me to
-                the specialization in image guided therapy during my<br>master. It equipped me with the essential knowledge
+                and solving today's real world problems<br>with software. After the apprenticeship as a polytechnician,
+                my
+                fascination<br>for writing software started in my Bachelor in Mechanical Engineering. This<br>later lead
+                me to
+                the specialization in image guided therapy during my<br>master. It equipped me with the essential
+                knowledge
                 to understand<br>machine learning algorithms and the ability to implement them.
             </strong>
         </h3>
