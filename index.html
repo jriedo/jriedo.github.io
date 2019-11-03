@@ -28,40 +28,137 @@
             <li><a href="cv.html">CV</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
-
     </div>
-    <div id="contentwrapper">
-        <div id="imgDiv">
-            <div class="imgCrop">
-                <img id="portrait" src="static/portrait.JPG" alt="Portrait Jan Riedo">
+    <div id="contentWrapper">
+        <div id="titleWrapper">
+            <div id="imgDiv">
+                <div class="imgCrop">
+                    <img id="portrait" src="static/portrait.JPG" alt="Portrait Jan Riedo">
+                </div>
+            </div>
+
+            <div id="portraitZoomed" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="portraitModal">
+                <div id="caption"></div>
+            </div>
+            <h2 id="masterquote">Biomedical Engineer With Focus On Deep Learning</h2>
+            <h3 id="introtxt">
+                <strong>
+                    The Master in Biomedical Engineering let me discover my passion for<br>intelligent algorithms, big data
+                    and solving today's real world problems<br>with software. After the apprenticeship as a polytechnician,
+                    my
+                    fascination<br>for writing software started in my Bachelor in Mechanical Engineering. This<br>later lead
+                    me to
+                    the specialization in image guided therapy during my<br>master. It equipped me with the essential
+                    knowledge
+                    to understand<br>machine learning algorithms and the ability to implement them.
+                </strong>
+            </h3>
+            <div id="links">
+                <a class="socialLink" target="_blank" href="https://linkedin.com/in/jriedo">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+
+                <a class="socialLink" target="_blank" href="https://github.com/jriedo/"><i
+                        class="fa fa-github fa-2x"></i></a>
             </div>
         </div>
+        <div id="blocksWrapper">
+            <h1>my projects</h1>
+    
+            <div class="blockWrapper">
+                <div class="imgWrapper"><img title="Master Thesis" class="blockImg"
+                                             src="static/variational_oar_8_s_tiles_bw.png"
+                                             alt="CandidateSegmentations"></div>
 
-        <div id="portraitZoomed" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="portraitModal">
-            <div id="caption"></div>
-        </div>
-        <h2 id="masterquote">Biomedical Engineer With Focus On Deep Learning</h2>
-        <h3 id="introtxt">
-            <strong>
-                The Master in Biomedical Engineering let me discover my passion for<br>intelligent algorithms, big data
-                and solving today's real world problems<br>with software. After the apprenticeship as a polytechnician,
-                my
-                fascination<br>for writing software started in my Bachelor in Mechanical Engineering. This<br>later lead
-                me to
-                the specialization in image guided therapy during my<br>master. It equipped me with the essential
-                knowledge
-                to understand<br>machine learning algorithms and the ability to implement them.
-            </strong>
-        </h3>
-        <div class="footer">
-            <a class="socialLink" target="_blank" href="https://linkedin.com/in/jriedo">
-                <i class="fa fa-linkedin fa-2x"></i>
-            </a>
+                <div class="descriptionWrapper">
+                    <h2>Deep Learning-based Approach for Variable Candidate Segmentation</h2>
+                    <p>Medical image segmentations made by experts express a lot of variability. This variability can
+                        reflect the underlying uncertainty which lies in the nature of medical data. During my master thesis I
+                        developed a neural network architecture which was able to create diverse candidate segmentations for
+                        one input image. For validation purposes, I built a web interface based on python's Flask library
+                        and deployed it with Google App Engine and Google Cloud Storage. A clinician used this interface to
+                        rate my candidate segmentations. Full doc on request.
+                        <a class="more" href="pdfs/one_page_summary.pdf">summary</a>
+                        <a class="more" href="https://github.com/jriedo/candidate_segmentations">code soon public</a>
+                    </p>
+                </div>
 
-            <a class="socialLink" target="_blank" href="https://github.com/jriedo/"><i
-                    class="fa fa-github fa-2x"></i></a>
+                <div class="dateWrapper"><p>March 2019 - September 2019<br>Master Thesis</p></div>
+            </div>
+
+            <div class="blockWrapper">
+                <div class="imgWrapper"><img title="Active Learning" class="blockImg"
+                                             src="static/active_learning.png" alt="ActiveLearning"></div>
+                <div class="descriptionWrapper">
+                    <h2>Skull Stripping: An Active Learning Approach</h2>
+                    <p>Two main challenges of automated image processing in medical image analysis are the heterogeneity of
+                        the data and the scarcity of it. Although abundant data exists, labeling it is very time-consuming
+                        and expensive. Therefore it is crucial to be able to train an algorithm with very few data. One
+                        approach to this is active learning, where unlabeled samples are actively selected by certain
+                        criteria and then used to train the deep network. With this approach it is possible to reach a good
+                        performance without having to label all the data.
+                        <a class="more" href="pdfs/active_learning.pdf">doc</a>
+                        <a class="more" href="https://github.com/istb-mia/alss-jriedo">source</a></p>
+                </div>
+                <div class="dateWrapper"><p>June 2018 - September 2018<br>Civil Service</p></div>
+
+            </div>
+
+            <div class="blockWrapper">
+                <div class="imgWrapper"><img title="Connect 4" class="blockImg"
+                                             src="static/connect4.png"
+                                             alt="Connect4"></div>
+                <div class="descriptionWrapper">
+                    <h2>Connect 4: A Minimax Game Engine in C++ and Python</h2>
+                    <p>What started as a private project for hands-on experience with game theory ended with a competition
+                        C++ vs python. My first minimax algorithm with alpha-beta-pruning was written in Python. It could
+                        easily compete against a mediocre human in the game of connect 4. It achieved a 4 moves look-ahead
+                        within reasonable computation time (cpu) of 2-3 s. During a C++ module, I had the chance to come up
+                        with a project. So I decided to compete against the Python implementation. What came out is a
+                        200-times faster connect 4 engine with a look-ahead of 8 moves in 2s. For the pure joy of building it, I constructed
+                        a hardware connect 4 bot which can play against a human in real life. <br>
+
+                        I am aware that connect 4 is a solved and relatively easy game, but perfect to explore game theory.
+                        <a class="more" target="_blank" href="https://github.com/jriedo/Connect4-python">Python code</a>
+                        <a class="more" target="_blank" href="https://github.com/jriedo/Connect4-cpp">C++ code</a>
+                    </p>
+                </div>
+                <div class="dateWrapper"><p>September 2018 - December 2018<br>Private & Master Module</p></div>
+            </div>
+
+            <div class="blockWrapper">
+                <div class="imgWrapper"><img title="Skin Lesions" class="blockImg"
+                                             src="static/skin_lesion.png" alt="SkinLesion"></div>
+                <div class="descriptionWrapper">
+                    <h2>Skin Lesion Analysis Towards Melanoma Detection: A Generative Approach</h2>
+                    <p>The International Skin Imaging Collaboration (ISIC) sets up a challenge every year called "Skin
+                        Lesion Analysis Towards Melanoma Detection". It aims at automated skin lesion classification and
+                        melanoma detection. During a project of the master module "Advanced Topics in Machine Learning" we
+                        created a pipeline for data augmentation and classification. The augmentation was carried out with a
+                        variational autoencoder, followed by a generative adversarial network. Classification was then done
+                        with a standard ResNet.
+
+                        <a class="more" target="_blank" type="application/pdf" href="pdfs/skin_lesion.pdf">more</a></p>
+                </div>
+                <div class="dateWrapper"><p>February 2018 - May 2018<br>Master Module</p></div>
+            </div>
+
+            <div class="blockWrapper">
+                <div class="imgWrapper"><img title="Conventional ML" class="blockImg"
+                                             src="static/brainseg.png" alt="BrainSegmentation"></div>
+                <div class="descriptionWrapper">
+                    <h2>Automatic Brain Tissue Segmentation in MRI using Supervised Machine Learning</h2>
+                    <p>
+                        The first time I came in contact with conventional machine learning algorithms was during this lab
+                        module of medical image analysis. With very simple implementations of random forests, support vector
+                        machines and k-nearest-neighbor algorithms, we were able to achieve reasonable performance on the
+                        task of brain matter segmenation.
+                        <a class="more" target="_blank" href="pdfs/mialab.pdf">more</a></p>
+                </div>
+                <div class="dateWrapper"><p>September 2017 - January 2018<br>Master Module</p></div>
+            </div>
         </div>
     </div>
 </div>
